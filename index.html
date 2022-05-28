@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+    <title>Car-price</title>
+    <link rel="stylesheet" href="./App.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    ></script>
+    <script defer src="./app.js"></script>
+    
+  </head>
+  <body>
+    <div class="text-center">
+      <img src="./images/motorcycle.png" class="img-fluid" alt="...">
+
+      <img src="./images/car.png" class="img-fluid" alt="...">
+
+      <img src="./images/truck.png" class="img-fluid" alt="...">
+    </div>
+    <hr/>
+    <div class="container">
+      <div id="form">
+          <select  id="referencia"  class="form-select" aria-label="Default select example">
+            <option value="">Mês</option>
+          </select>
+          <select id="tipo_veiculo" class="form-select" aria-label="Default select example">
+            <option value="">Veículo</option>
+            <option value="1">Car</option>
+            <option value="2">Motorcycle</option>
+            <option value="3">Trucks</option>
+          </select>
+          <h4>Marca</h4>
+          <select id="marca" class="form-select" aria-label="Default select example">
+            <option value="">-</option>
+          </select>
+          <h4>Modelo</h4>
+          <select id="modelo" class="form-select" aria-label="Default select example">
+            <option value="">-</option>
+          </select>
+          <h4>Ano</h4>
+          <select id="ano" class="form-select" aria-label="Default select example">
+            <option value="">-</option>
+          </select>
+        <p> 
+          <button type="button" disabled id="search" class="btn mb-2 mr-2 btn-pill btn-primary">Buscar</button>
+        </p>
+      </div>
+      <div id="resultado"></div>
+    </div>
+    <hr/>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./tablework.js");
+        });
+      }
+    </script>
+    <footer>
+      <div class="git" 
+    class=" navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://github.com/jiordane"><small>🥷🏼 Jiordev</small></a>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>

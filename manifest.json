@@ -1,0 +1,16 @@
+{
+  "short_name": "Car price",
+  "name": "Car price",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "url": ".",
+  "lang": "English",
+  "orientation": "any"
+}

@@ -1,0 +1,72 @@
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+    color: azure;
+    
+  margin: 2rem;
+  background:#131824;
+}
+
+h4 {
+  margin: 0 0 0.5rem 0;
+}
+p {
+  margin: 0 0 1rem 0;
+  
+}
+select,
+button {
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0%15;
+}
+select {
+  background-color: rgb(212, 215, 218);
+  height: 3rem;
+  border-radius: 0%20;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+button {
+  background-color: rgb(57, 109, 221);
+  border: 1px solid;
+}
+table {
+  border: 1px solid rgb(238, 150, 18);
+  border-collapse: collapse;
+}
+table tr td {
+  padding: 1rem;
+  border-radius: 10%;
+  border: 1px solid rgb(10, 101, 161);
+}
+table tr td:first-child {
+  background: rgb(24, 23, 23);
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 1rem 0;
+}
+@media (min-width: 500px) {
+  .container {
+    flex-direction: row;
+    
+  }
+  .container div {
+    text-align: center;
+    width: 48%;
+  }
+}
+.git {
+
+  position: center;
+  background-size: contain;
+  padding-left: 20px;
+  height: 1rem;
+
+}
